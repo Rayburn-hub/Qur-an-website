@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURAH</title>
+  <style>
+    body {
+      font-family: 'Sans-serif';
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      overflow-y: auto;
+      max-height: 90vh;
+      top: 100px;
+    }
+
+    .surah-box {
+      display: flex;
+      align-items: center;
+      background-color: red;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 300px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      height: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .surah-box .number {
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .surah-box .name {
+      text-transform: uppercase;
+    }
+
+    /* Night Mode Styles */
+    body.night-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.night-mode .surah-box {
+      background-color: #333;
+    }
+
+    /* Toggle Button */
+    .toggle-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+.toggle-button:hover {
+  background-color: #555; /* Solid color */
+  box-shadow: 0 0 5px #007bff, 0 0 30px #0056b3;
+  transition: box-shadow 1s;
+}
+  </style>
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button class="toggle-button" onclick="toggleNightMode()">Night Mode</button>
+  <div class="container">
+    <a href="fat-ha.html" class="surah-box">
+      <span class="number">01</span>
+      <span class="name">Suratul Fath</span>
+    </a>
+
+    <a href="Nabaa.html" class="surah-box">
+      <span class="number">02</span>
+      <span class="name">Suratul Nabaa</span>
+    </a>
+    <a href="Nazi'at.html" class="surah-box">
+      <span class="number">03</span>
+      <span class="name">Suratul Nazi'at</span>
+    </a>
+    <a href="Abasa.html" class="surah-box">
+      <span class="number">04</span>
+      <span class="name">Suratul Abasa</span>
+    </a>
+    <a href="Tak-wir.html" class="surah-box">
+      <span class="number">05</span>
+      <span class="name">Suratul Al-Tak-wir</span>
+    </a>
+    <a href="Infi-twar.html" class="surah-box">
+      <span class="number">05</span>
+      <span class="name">Suratul Al-Infi-twar</span>
+    </a>
+    
+    <a href="mutaffifin.html" class="surah-box">
+      <span class="number">06</span>
+      <span class="name">Suratul Al-Mutaffifin</span>
+    </a>
+    <a href="inshi-qaq.html" class="surah-box">
+      <span class="number">07</span>
+      <span class="name">Suratul Al-Inshi-qaq</span>
+    </a>
+    <a href="Buruj.html" class="surah-box">
+      <span class="number">08</span>
+      <span class="name">Suratul Al-Buruj</span>
+    </a>
+    <a href="At-Tariq.html" class="surah-box">
+      <span class="number">09</span>
+      <span class="name">Suratul At-Tariq</span>
+    </a>
+    <a href="Al-A'la.html" class="surah-box">
+      <span class="number">10</span>
+      <span class="name">Suratul Al-A'la</span>
+    </a>
+    <a href="Al-ghashiyah.html" class="surah-box">
+      <span class="number">11</span>
+      <span class="name">Suratul Al-Ghashiyah</span>
+    </a>
+    <a href="Al-Fajr.html" class="surah-box">
+      <span class="number">12</span>
+      <span class="name">Suratul Al-Fajr</span>
+    </a>
+    <a href="Al-Balad.html" class="surah-box">
+      <span class="number">13</span>
+      <span class="name">Suratul Al-Balad</span>
+    </a>
+    <a href="Ash-shams.html" class="surah-box">
+      <span class="number">14</span>
+      <span class="name">Suratul Ash-Shams</span>
+    </a>
+    <a href="Al-layl.html" class="surah-box">
+      <span class="number">15</span>
+      <span class="name">Suratul Al-layl</span>
+    </a>
+    <a href="Adh-dhuha.html" class="surah-box">
+      <span class="number">16</span>
+      <span class="name">Suratul Adh-dhuha</span>
+    </a>
+    <a href="Ash-sharh.html" class="surah-box">
+      <span class="number">17</span>
+      <span class="name">Suratul Ash-sharh</span>
+    </a>
+    <a href="At-tin.html" class="surah-box">
+      <span class="number">18</span>
+      <span class="name">Suratul At-tin</span>
+    </a>
+    <a href="Al-'Alaq.html" class="surah-box">
+      <span class="number">19</span>
+      <span class="name">Suratul Al-'Alaq</span>
+    </a>
+    <a href="Al-Qadr.html" class="surah-box">
+      <span class="number">20</span>
+      <span class="name">Suratul Al-Qadr</span>
+    </a>
+    <a href="Al-Baiyinah.html" class="surah-box">
+      <span class="number">21</span>
+      <span class="name">Suratul Al-Baiyinah</span>
+    </a>
+    <a href="Az-zalzalaha.html" class="surah-box">
+      <span class="number">22</span>
+      <span class="name">Suratul Az-zalzalaha</span>
+    </a>
+    <a href="Al-'Adiyat.html" class="surah-box">
+      <span class="number">23</span>
+      <span class="name">Suratul Al-'Adiyat</span>
+    </a>
+    <a href="Al-Qari'ah.html" class="surah-box">
+      <span class="number">24</span>
+      <span class="name">Suratul Al-Qari'ah</span>
+    </a>
+    <a href="At-takathur.html" class="surah-box">
+      <span class="number">25</span>
+      <span class="name">Suratul At-Takathur</span>
+    </a>
+    <a href="Al-'Asr.html" class="surah-box">
+      <span class="number">26</span>
+      <span class="name">Suratul Al-'Asr</span>
+    </a>
+    <a href="Al-Humazah.html" class="surah-box">
+      <span class="number">27</span>
+      <span class="name">Suratul Al-Humazah</span>
+    </a>
+    <a href="Al-Fil.html" class="surah-box">
+      <span class="number">28</span>
+      <span class="name">Suratul Al-Fil</span>
+    </a>
+    <a href="Quraish.html" class="surah-box">
+      <span class="number">29</span>
+      <span class="name">Suratul Quraish</span>
+    </a>
+    <a href="Al-Ma'un.html" class="surah-box">
+      <span class="number">30</span>
+      <span class="name">Suratul Al-Ma'un</span>
+    </a>
+  </div>
+
+  <script>
+    // Function to toggle night mode
+    function toggleNightMode() {
+      const body = document.body;
+      const button = document.querySelector('.toggle-button');
+
+      body.classList.toggle('night-mode');
+
+      // Change button text based on mode
+      if (body.classList.contains('night-mode')) {
+        button.textContent = 'Normal Mode';
+      } else {
+        button.textContent = 'Night Mode';
+      }
+    }
+  </script>
+</body>
+</html>
+  
