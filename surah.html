@@ -114,11 +114,11 @@
     box-shadow: 0 0 10px blue;
     transform: rotateY(45deg) rotateX(34deg) scale(1.2);
   }
-  a{
+  .a{
     text-decoration: none;
     color: black;
   }
-  a:visited{
+  .a:visited{
     color: black;
   }
   
@@ -127,10 +127,10 @@
 <body>
   
   <div class="nav">
-    <span class="option"><a href="support.html">support</a></span>
+    <span class="option"><a class="a" href="support.html">support</a></span>
     <span class="option" id="theme"onclick="toggleNightMode()"> Theme </span>
-    <span class="option"><a href="index.html">Home</a></span>
-    <span class="option"><a href="about.html">About</a></span>
+    <span class="option"><a href="index.html" class="a">Home</a></span>
+    <span class="option"><a href="about.html" class="a">About</a></span>
   </div>
   
   <div class="container">
