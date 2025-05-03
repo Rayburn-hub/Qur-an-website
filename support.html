@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+  body{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  } 
+ .SM {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.SM:hover {
+  transform: rotateY(10deg) rotateX(30deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  width: 1500px;
+  background: radial-gradient(circle , yellow , black );
+}
+  img{
+     position: relative;
+     height: 50px;
+     width: 50px; 
+     top: -20px;
+  }
+  whtsapp-icon{
+    position: relative;
+     height: 50px;
+     width: 50px;
+     top: -20px;
+  }
+  a{
+    display: flex;
+    flex-direction: column
+    color: black;
+    text-decoration: none;
+    background-color: #0000004f;
+    padding-block: 0.8rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .collector{
+    display: flex;
+    flex-direction: column;
+  }
+  .whtsapp-icon{
+    position: relative;
+    top: -40px;
+    width: 70px;
+    height: 60px;
+  }
+  </style>
+</head>
+<body>
+   <section style="text-align: center; margin-top: 50px;">
+    <h2 style="color: white;">Support Our Qur'an Website</h2>
+    <p style="color: white;">If you would like to support this project, you can send your donation through TigoPesa.</p>
+    <p style="color: white;"><strong>Number:</strong> 0779948427</p>
+    <p style="color: white;"><strong>Name:</strong> Mussa Omar Khamis</p>
+    <p style="color: white;">May Allah reward you abundantly for your support!</p>
+</section>
+  <div class="container">
+    <div class="SM">
+      <img src="TikTok.png">
+      <p>Tiktok</p>
+      <span class="collector">
+      <p>Followers : <span>70</span></p>
+      </span>
+      <a href="https://www.tiktok.com/@rayburn_509?_r=1&_d=efh92kkm78817d&sec_uid=MS4wLjABAAAA2YY379bgh3lY_Dwacq0tt9dh3IK1V0phC4HDGPqkm9UdNa-i0jTBXIStBjz3dgVr&share_author_id=7401804884969210885&sharer_language=en&source=h5_m&u_code=efh935f5aam32h&timestamp=1746091828&user_id=7401804884969210885&sec_user_id=MS4wLjABAAAA2YY379bgh3lY_Dwacq0tt9dh3IK1V0phC4HDGPqkm9UdNa-i0jTBXIStBjz3dgVr&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7485456844267243319&share_link_id=aa3513ac-56d2-40de-bd19-0ffee11230c2&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1">
+      <span class="button">Follow me </span>
+      </a>
+    </div>
+    <div class="SM">
+      <img class="whtsapp-icon" src="whatsapp.ico">
+        <p>What'sapp</p>
+      <a href="https://wa.me/message/2SGSONBOSZMND1">
+      <span class="button"> Text for more</span>
+      </a>
+    </div>
+    <div class="SM">
+        <img src="instagram.jpg">
+        <p>instagram</p>
+      <span class="collector">
+      <p>Followers : <span>1k</span></p>
+      </span>
+      <a href="https://www.instagram.com/rayburn_509?igsh=MTlmZm1hMTFmamQxaQ==">
+        <span class="button">Follow me</span>
+      </a>
+    </div>
+    
+  </div>
+</body>
+</html>
+
