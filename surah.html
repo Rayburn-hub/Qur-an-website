@@ -61,31 +61,78 @@
       background-color: #333;
     }
 
-    /* Toggle Button */
-    .toggle-button {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-
-.toggle-button:hover {
+#theme:hover {
   background-color: #555; /* Solid color */
   box-shadow: 0 0 5px #007bff, 0 0 30px #0056b3;
   transition: box-shadow 1s;
 }
+  
+   .nav{
+    position: fixed;
+    top: 25px;
+    display: flex;
+    gap: 9px;
+    background-color: black;
+    height: 5px;
+    width: 90%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .option{
+    position: relative;
+    color: black;
+    display: grid;
+    top: 1px;
+    background-color: white;
+    border-radius: 10px;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    text-decoration: none;
+  }
+  .icons{
+    width: 50px;
+    height: 50px;
+    background-color:;
+  }
+  .option:hover{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px blue;
+    transform: rotateY(45deg) rotateX(34deg) scale(1.2);
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:visited{
+    color: black;
+  }
+  
   </style>
 </head>
 <body>
-  <!-- Toggle Button -->
-  <button class="toggle-button" onclick="toggleNightMode()">Night Mode</button>
+  
+  <div class="nav">
+    <span class="option"><a href="support.html">support</a></span>
+    <span class="option" id="theme"onclick="toggleNightMode()"> Theme </span>
+    <span class="option"><a href="index.html">Home</a></span>
+    <span class="option"><a href="about.html">About</a></span>
+  </div>
+  
   <div class="container">
     <a href="fat-ha.html" class="surah-box">
       <span class="number">01</span>
