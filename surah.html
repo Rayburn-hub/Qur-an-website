@@ -278,6 +278,13 @@
       }
     }
   </script>
+  <script>
+  // Automatically number the surah boxes
+  const surahs = document.querySelectorAll('.surah-box .number');
+  surahs.forEach((item, index) => {
+    item.textContent = String(index + 1).padStart(2, '0');
+  });
+</script>
 </body>
 </html>
   
